@@ -1,0 +1,9 @@
+syntax enable
+set nocompatible
+set background=dark
+colorscheme solarized
+set hidden
+set ruler
+set number
+set hlsearch
+set incsearch
