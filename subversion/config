@@ -58,6 +58,7 @@
 ### merging tool of choice. Subversion will pass 4 arguments to
 ### the specified command: base theirs mine merged
 # merge-tool-cmd = merge_command
+diff-cmd = ksdiff-svnwrapper
 
 ### Section for configuring tunnel agents.
 [tunnels]
