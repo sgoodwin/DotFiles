@@ -1,10 +1,18 @@
 set nocompatible
 call pathogen#infect()
+call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
 set background=dark
 colorscheme solarized
+
+set guifont=Monaco:h14
+if has("gui_running")
+	set guioptions=egmrt
+endif
+
+set modelines=0
 
 set hidden
 set ruler
@@ -17,3 +25,7 @@ set incsearch
 
 set backspace=indent,eol,start
 set autochdir
+
+"xcode make program
+"set makeprg=xcodebuild\ -configuration\ Debug\ -sdk\ iphonesimulator5.0
+"set errorformat=%f:%l:\ error:\ %m,%f:%l:\ warning:\ %m
