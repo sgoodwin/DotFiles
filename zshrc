@@ -35,4 +35,4 @@ export PATH="/usr/local/narwhal/bin:$PATH"
 
 export CAPP_BUILD="$HOME/Desktop/cappsource/Build"
 
-alias vim=mvim
+#alias vim=mvim
