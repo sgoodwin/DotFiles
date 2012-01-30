@@ -1,6 +1,6 @@
 [user]
 	name = Samuel Goodwin
-	email = goodwinlabs@gmail.com
+	email = samuel.goodwin@me.com
 [difftool "Kaleidoscope"]
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]

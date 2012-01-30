@@ -26,8 +26,17 @@ set hlsearch
 set incsearch
 
 set backspace=indent,eol,start
-set autochdir
 
 "xcode make program
 "set makeprg=xcodebuild\ -configuration\ Debug\ -sdk\ iphonesimulator5.0
-set errorformat=%f:%l:\ error:\ %m,%f:%l:\ warning:\ %m
+"set errorformat=%f:%l:\ error:\ %m,%f:%l:\ warning:\ %m
+set errorformat=
+      \%f:%l:%c:{%*[^}]}:\ error:\ %m,
+      \%f:%l:%c:{%*[^}]}:\ fatal\ error:\ %m,
+      \%f:%l:%c:{%*[^}]}:\ warning:\ %m,
+      \%f:%l:%c:\ error:\ %m,
+      \%f:%l:%c:\ fatal\ error:\ %m,
+      \%f:%l:%c:\ warning:\ %m,
+      \%f:%l:\ error:\ %m,
+      \%f:%l:\ fatal\ error:\ %m,
+      \%f:%l:\ warning:\ %m
