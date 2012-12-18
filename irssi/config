@@ -2,8 +2,8 @@ servers = (
   {
     address = "irc.freenode.org";
     port = "6667";
-    nick = "muk_work";
-    password = "scyther";
+    nick = "samuelgoodwin";
+    password = "scyther720";
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
@@ -185,7 +185,7 @@ settings = {
   core = {
     real_name = "Samuel Goodwin";
     user_name = "samuelgoodwin";
-    nick = "muk_work";
+    nick = "samuelgoodwin";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };

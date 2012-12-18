@@ -6,10 +6,16 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-set background=dark
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
 colorscheme solarized
-set guifont=Monaco:h14
+
 if has("gui_running")
+	" set guifont=DejaVuSansMono:h14
+	set guifont=EssentialPragmataPro:h14
 	set guioptions=egmrt
 endif
 
@@ -26,17 +32,6 @@ set hlsearch
 set incsearch
 
 set backspace=indent,eol,start
+set tabstop=2
+set shiftwidth=2
 
-"xcode make program
-"set makeprg=xcodebuild\ -configuration\ Debug\ -sdk\ iphonesimulator5.0
-"set errorformat=%f:%l:\ error:\ %m,%f:%l:\ warning:\ %m
-set errorformat=
-      \%f:%l:%c:{%*[^}]}:\ error:\ %m,
-      \%f:%l:%c:{%*[^}]}:\ fatal\ error:\ %m,
-      \%f:%l:%c:{%*[^}]}:\ warning:\ %m,
-      \%f:%l:%c:\ error:\ %m,
-      \%f:%l:%c:\ fatal\ error:\ %m,
-      \%f:%l:%c:\ warning:\ %m,
-      \%f:%l:\ error:\ %m,
-      \%f:%l:\ fatal\ error:\ %m,
-      \%f:%l:\ warning:\ %m

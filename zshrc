@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="cloud"
+export ZSH_THEME="philips"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -26,13 +26,4 @@ plugins=(terminalapp)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-export PATH="/usr/local/narwhal/bin:$PATH"
-
-export NARWHAL_ENGINE=jsc
-
-export PATH="/usr/local/narwhal/bin:$PATH"
-
-export CAPP_BUILD="$HOME/Desktop/cappsource/Build"
-
-#alias vim=mvim
+alias git='xcrun git'
