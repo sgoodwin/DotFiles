@@ -6,7 +6,7 @@
 	status = auto
 	branch = auto
 	interactive = auto
-	ui = auto
+	ui = true
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
@@ -19,3 +19,5 @@
 	prompt = false
 [merge]
 	tool = Kaleidoscope
+[core]
+	editor = bbedit --wait --resume

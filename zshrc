@@ -25,5 +25,6 @@ plugins=(terminalapp)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-alias git='xcrun git'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/Cellar/ruby/1.9.3-p374/bin:/usr/local/heroku/bin:$PATH"
