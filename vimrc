@@ -1,37 +1,23 @@
 set nocompatible
+filetype off
 
-call pathogen#infect()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-syntax on
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'tomasr/molokai'
+
 filetype plugin indent on
+syntax on
 
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-colorscheme solarized
+let mapleader=","
 
-if has("gui_running")
-	" set guifont=DejaVuSansMono:h14
-	set guifont=EssentialPragmataPro:h14
-	set guioptions=egmrt
-endif
-
-set modelines=0
-set noautochdir
-
-set hidden
-set ruler
-set number
-
-set ignorecase 
-set smartcase                     
-set hlsearch
-set incsearch
-
-set backspace=indent,eol,start
-set tabstop=2
-set shiftwidth=2
-
+set background=dark
+colorscheme molokai

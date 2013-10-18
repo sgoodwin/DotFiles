@@ -23,8 +23,11 @@ export DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(terminalapp)
 
+alias stat='git status -sb'
+alias push='git push'
+
 source $ZSH/oh-my-zsh.sh
 
+export PATH="/usr/local/bin:/usr/local/Cellar/ruby/2.0.0-p247/bin:/usr/local/heroku/bin:$PATH"
+export EDITOR="/usr/local/bin/mate -w"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/Cellar/ruby/1.9.3-p374/bin:/usr/local/heroku/bin:$PATH"
