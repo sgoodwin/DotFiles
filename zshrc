@@ -28,6 +28,6 @@ alias push='git push'
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/local/Cellar/ruby/2.0.0-p247/bin:/usr/local/heroku/bin:$PATH"
-export EDITOR="/usr/local/bin/mate -w"
+export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
+export EDITOR="/usr/local/bin/vim"
 
