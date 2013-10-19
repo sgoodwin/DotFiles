@@ -11,13 +11,13 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
-Bundle 'jelera/vim-javascript-syntax'
 Bundle 'tomasr/molokai'
 
-filetype plugin indent on
 syntax on
+filetype plugin indent on
 
 let mapleader=","
 
 set background=dark
 colorscheme molokai
+set number
