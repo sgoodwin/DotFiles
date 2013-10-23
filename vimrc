@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tomasr/molokai'
+Bundle 'wookiehangover/jshint.vim'
 
 syntax on
 filetype plugin indent on
