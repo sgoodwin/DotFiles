@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tomasr/molokai'
+Bundle 'tpope/vim-markdown'
 Bundle 'wookiehangover/jshint.vim'
 
 syntax on
@@ -26,3 +27,15 @@ let mapleader=","
 set background=dark
 colorscheme molokai
 set number
+
+set bs=2
+
+" No more arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
