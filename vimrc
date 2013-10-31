@@ -47,3 +47,6 @@ noremap <silent> <C-l> : <C-u> nohlsearch <CR><C-l>
 
 " Hilight searches
 set hls
+
+" Reformat whole buffer with ',='
+map <Leader>= gg=G<CR>
