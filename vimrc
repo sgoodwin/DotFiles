@@ -30,6 +30,7 @@ set number
 
 set bs=2
 
+
 " No more arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -39,3 +40,9 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" Disable search hilighting with <C-l>
+noremap <silent> <C-l> : <C-u> nohlsearch <CR><C-l>
+
+" Hilight searches
+set hls
