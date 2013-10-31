@@ -49,4 +49,4 @@ noremap <silent> <C-l> : <C-u> nohlsearch <CR><C-l>
 set hls
 
 " Reformat whole buffer with ',='
-map <Leader>= gg=G<CR>
+map <Leader>= gg=G
