@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-commentary'
 Bundle 'tomasr/molokai'
 Bundle 'tpope/vim-markdown'
 Bundle 'wookiehangover/jshint.vim'
