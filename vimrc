@@ -50,3 +50,8 @@ set hls
 
 " Reformat whole buffer with ',='
 map <Leader>= gg=G
+
+" Show invisibles
+set list
+set listchars=tab:▸\ ,eol:¬
+
