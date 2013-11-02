@@ -24,6 +24,7 @@ set shiftwidth=2
 set expandtab
 
 let mapleader=","
+noremap \ ,
 
 set background=dark
 colorscheme molokai
