@@ -56,3 +56,5 @@ map <Leader>= gg=G
 set list
 set listchars=tab:▸\ ,eol:¬
 
+" Use matchit
+runtime macros/matchit.vim
