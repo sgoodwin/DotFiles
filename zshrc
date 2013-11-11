@@ -19,5 +19,6 @@ alias push='git push'
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
+export PATH="/Users/sgoodwin/Go/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
 export EDITOR="/usr/local/bin/vim"
+export GOPATH=$HOME/Go
