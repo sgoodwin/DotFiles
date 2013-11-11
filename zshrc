@@ -16,6 +16,7 @@ plugins=(terminalapp)
 
 alias stat='git status -sb'
 alias push='git push'
+alias vundle='vim +BundleClean +BundleInstall +qall'
 
 source $ZSH/oh-my-zsh.sh
 
