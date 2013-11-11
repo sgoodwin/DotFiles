@@ -58,3 +58,6 @@ set listchars=tab:▸\ ,eol:¬
 
 " Use matchit
 runtime macros/matchit.vim
+
+" Use system clipboard for copy/paste
+set clipboard=unnamed
