@@ -17,6 +17,7 @@
 /def -p0 -ah -mglob -t'You can again call upon your vitality.' 
 /def -p0 -ah -mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
 /def -p0 -ah -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
+/def -p0 -ah -mglob -t'You touch the tattoo and a shimmering translucent shield forms around you.'
 
 ; Auto Bashing
 /def bashon=/set shouldAutoBash=1%;/echo ** Bashing Enabled ** %;/a
