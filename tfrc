@@ -1,0 +1,58 @@
+/set hiliteattr=ufBbhCred
+/def reload=/load ~/.tfrc
+/set t=locust
+
+; Weapon
+/def tri = wield trident
+
+; Pick up shit
+/def get = get gold%; get 50 corpse
+/def char = get charcoal%;inr charcoal
+
+; Gold
+/def outgold = open satchel%;get gold from satchel%;
+/def gold = open satchel%;put gold in satchel%;close satchel
+
+; Hilites
+/def -p0 -ah -mglob -t'You can again call upon your vitality.' 
+/def -p0 -ah -mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
+/def -p0 -ah -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
+
+; Auto Bashing
+/def bashon=/set autobash=1%;/echo ** Bashing Enabled ** %;/a
+/def bashoff=/set autobash=05%;/echo ** Bashing Disabled **
+/set autobash=1
+/def -p0 -mglob -t'You have recovered balance.' =/hit
+/def hit=/if (autobash==1) /a%; /endif
+
+; Killing shit
+/def key_left = /bashoff%; touch shield
+
+; Spear
+/def ice = wyrm icecoat trident
+/def black = wyrm blacken trident
+
+/def s = spear shatter %{t}
+/def b = spear batter %{t}
+/def sm = spear smash %{t}
+/def l = spear longslash %{t}
+/def a = stab %{t}
+/def t = spear trip %{t}
+/def p = spear pierce %{t}
+
+; Wyrm
+/def h = wyrm hoist %{t}
+/def r = wyrm release %{t}
+/def f = wyrm frostheart %{t}
+/def g = wyrm gorge %{t}
+/def i = wyrm icebreath %{t}
+/def ig = wyrm icebreath ground
+/def r = wyrm roar %{t}
+/def c = wyrm charge %{t}
+/def bon = wyrm bloodscent on
+/def boff = wyrm bloodscent off
+/def heal = wyrm heal
+
+; Pets
+/def p = surge vulture%; surge caracal%;
+/def aggro = order caracal attack %{t}%; order vulture attack %{t}

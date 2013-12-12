@@ -1,6 +1,0 @@
-/def dh = drink health
-/def g = get %t%;get gold
-/def 1 = give gnome to mucka
-/def p = kata perform %t hunt hunt 
-/def f = kata perform %t huntfast huntfast
-/def defup = stealth agility%;rub ring%;sneak%;
