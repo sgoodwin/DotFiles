@@ -19,11 +19,11 @@
 /def -p0 -ah -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
 
 ; Auto Bashing
-/def bashon=/set autobash=1%;/echo ** Bashing Enabled ** %;/a
-/def bashoff=/set autobash=05%;/echo ** Bashing Disabled **
-/set autobash=1
+/def bashon=/set shouldAutoBash=1%;/echo ** Bashing Enabled ** %;/a
+/def bashoff=/set shouldAutoBash=05%;/echo ** Bashing Disabled **
+/set shouldAutoBash=1
 /def -p0 -mglob -t'You have recovered balance.' =/hit
-/def hit=/if (autobash==1) /a%; /endif
+/def hit=/if (shouldAutoBash==1) /a%; /endif
 
 ; Killing shit
 /def key_left = /bashoff%; touch shield
