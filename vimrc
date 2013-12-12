@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/tf.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
 Bundle 'tomasr/molokai'
@@ -58,6 +59,3 @@ set listchars=tab:▸\ ,eol:¬
 
 " Use matchit
 runtime macros/matchit.vim
-
-" Use system clipboard for copy/paste
-set clipboard=unnamed
