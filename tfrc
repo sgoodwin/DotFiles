@@ -24,7 +24,8 @@
 /def bashoff=/set shouldAutoBash=05%;/echo ** Bashing Disabled **
 /set shouldAutoBash=1
 /def -p0 -mglob -t'You have recovered balance.' =/hit
-/def hit=/if (shouldAutoBash==1) /a%; /endif
+/def hit=/if (shouldAutoBash==1) /bash%; /endif
+/def bash=slash %{t}
 
 ; Killing shit
 /def key_left = /bashoff%; touch shield
