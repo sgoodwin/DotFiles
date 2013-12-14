@@ -1,14 +1,21 @@
+; Setup
 /set hiliteattr=ufBhCred
 /set isize=1
 /set t=locust
-
+/def save=nothing
 /def reload = /load ~/.tfrc
+
+; Basics
 /def tri = wield trident
 /def get = get gold%; get 50 corpse
 /def salt = get all saltpetre%;inr all
 /def char = get charcoal%;inr charcoal
+
+; Gold
 /def outgold = open satchel%;get gold from satchel%;
 /def gold = open satchel%;put gold in satchel%;close satchel
+
+; Hilites
 /def -p0 -auBCred -mglob -t'You can again call upon your vitality.' 
 /def -p0 -auBCred -mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
 /def -p0 -auBCred -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
@@ -19,6 +26,8 @@
 /def -p0 -auBbCred -mglob -t'I do not recognize anything called that here.' 
 /def -p0 -auBbCred -mglob -t'Ahh, I am truly sorry, but I do not see anyone by that name here.' 
 /def -p0 -auBbCred -mglob -t'You are confused as to the effects of the toxin.' 
+
+; Bashing
 /def bashon = /set shouldAutoBash=1%;/echo ** Bashing Enabled ** %;/a
 /def bashoff = /set shouldAutoBash=05%;/echo ** Bashing Disabled **
 /def -p0 -mglob -t'You have recovered balance.' = /hit
@@ -26,8 +35,8 @@
 /def hit = /if (shouldAutoBash==1) /bash%; /endif
 /def bash = trident stab %{t}
 /def key_left = /bashoff%; touch shield
-/def ice = wyrm icecoat trident
-/def black = wyrm blacken trident
+
+; Trident
 /def sharp = open satchel %; get whetstone from satchel %; sharpen trident with whetstone %; put whetstone in satchel %; close satchel
 /def s = spear shatter %{t}
 /def b = spear batter %{t}
@@ -35,6 +44,10 @@
 /def l = spear longslash %{t}
 /def a = stab %{t}
 /def t = spear trip %{t}
+
+; Wyrm
+/def ice = wyrm icecoat trident
+/def black = wyrm blacken trident
 /def h = wyrm hoist %{t}
 /def f = wyrm frostheart %{t}
 /def g = wyrm gorge %{t}
@@ -45,5 +58,8 @@
 /def bon = wyrm bloodscent on
 /def boff = wyrm bloodscent off
 /def heal = wyrm heal
-/def p = surge vulture%; surge caracal%;
-/def aggro = order caracal attack %{t}%; order vulture attack %{t}
+
+; Pets
+/def p = surge %{1}
+/def aggro = order caracal attack %{t}%; order vulture attack %{t}%; order armadillo attack %{t}
+/def fol = order caracal follow me%; order armadillo follow me%; order vulture follow me
