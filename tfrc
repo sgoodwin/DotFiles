@@ -16,16 +16,28 @@
 /def gold = open satchel%;put gold in satchel%;close satchel
 
 ; Hilites
-/def -p0 -auBCred -mglob -t'You can again call upon your vitality.' 
-/def -p0 -auBCred -mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
-/def -p0 -auBCred -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
-/def -p0 -auBCred -mglob -t'You touch the tattoo and a shimmering translucent shield forms around you.' 
-/def -p0 -auBbCred -mglob -t'You do not see that individual here.' 
-/def -p0 -auBbCred -mglob -t'You detect nothing here by that name.' 
-/def -p0 -auBbCred -mglob -t'Nothing can be seen here by that name.' 
-/def -p0 -auBbCred -mglob -t'I do not recognize anything called that here.' 
-/def -p0 -auBbCred -mglob -t'Ahh, I am truly sorry, but I do not see anyone by that name here.' 
-/def -p0 -auBbCred -mglob -t'You are confused as to the effects of the toxin.' 
+/def -p0 -ah -mglob -t'You can again call upon your vitality.' 
+/def -p0 -ah-mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
+/def -p0 -ah -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
+/def -p0 -ah -mglob -t'You touch the tattoo and a shimmering translucent shield forms around you.' 
+/def -p0 -abh -mglob -t'You do not see that individual here.' 
+/def -p0 -abh -mglob -t'You detect nothing here by that name.' 
+/def -p0 -abh -mglob -t'Nothing can be seen here by that name.' 
+/def -p0 -abh -mglob -t'I do not recognize anything called that here.' 
+/def -p0 -abh -mglob -t'Ahh, I am truly sorry, but I do not see anyone by that name here.' 
+/def -p0 -ah -mglob -t'You are confused as to the effects of the toxin.' 
+/gag You must dismount from what you are currently riding before you can mount anything else.
+
+; Rebounding
+/def -p0 -abh -mglob -t'The attack rebounds back onto you!'
+/def -p0 -abh -mglob -t'You suddenly perceive the vague outline of an aura of rebounding around *'
+/def -p0 -abh -mglob -t'* aura of weapons rebounding disappears.'=/a
+/def -p0 -abh -mglob -t'A numbing energy runs up your limbs as your attack rebounds off of * shield.'
+
+; Defense messages
+/def -p0 -ah -mglob -t'The cold air strips the protection of * caloric salve.'
+
+
 
 ; Bashing
 /def bashon = /set shouldAutoBash=1%;/echo ** Bashing Enabled ** %;/a
@@ -33,17 +45,18 @@
 /def -p0 -mglob -t'You have recovered balance.' = /hit
 /def -p0 -mglob -t'You stand up and stretch your arms out wide.' = /hit
 /def hit = /if (shouldAutoBash==1) /bash%; /endif
-/def bash = trident stab %{t}
+/def bash = mount wyrm %; trident stab %{t}
 /def key_left = /bashoff%; touch shield
 
 ; Trident
 /def sharp = open satchel %; get whetstone from satchel %; sharpen trident with whetstone %; put whetstone in satchel %; close satchel
-/def s = spear shatter %{t}
-/def b = spear batter %{t}
-/def sm = spear smash %{t}
-/def l = spear longslash %{t}
-/def a = stab %{t}
-/def t = spear trip %{t}
+/def s = trident shatter %{t}
+/def b = trident batter %{t}
+/def p = trident pierce %{t}
+/def sm = trident smash %{t}
+/def l = trident longslash %{t}
+/def a = mount wyrm%;trident stab %{t} cyanide
+/def t = trident trip %{t}
 
 ; Wyrm
 /def ice = wyrm icecoat trident
@@ -61,5 +74,5 @@
 
 ; Pets
 /def p = surge %{1}
-/def aggro = order caracal attack %{t}%; order vulture attack %{t}%; order armadillo attack %{t}
-/def fol = order caracal follow me%; order armadillo follow me%; order vulture follow me
+/def aggro = order entourage kill %{t}
+/def fol = order entourage follow me 
