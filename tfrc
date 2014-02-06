@@ -16,8 +16,9 @@
 /def gold = open satchel%;put gold in satchel%;close satchel
 
 ; Hilites
+/def -p0 -ah -mglob -t'You notice a gladiator's trident trembling under the strain.'
 /def -p0 -ah -mglob -t'You can again call upon your vitality.' 
-/def -p0 -ah-mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
+/def -p0 -ah -mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
 /def -p0 -ah -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
 /def -p0 -ah -mglob -t'You touch the tattoo and a shimmering translucent shield forms around you.' 
 /def -p0 -abh -mglob -t'You do not see that individual here.' 
@@ -27,6 +28,7 @@
 /def -p0 -abh -mglob -t'Ahh, I am truly sorry, but I do not see anyone by that name here.' 
 /def -p0 -ah -mglob -t'You are confused as to the effects of the toxin.' 
 /gag You must dismount from what you are currently riding before you can mount anything else.
+/def -p0 -ah -mglob -t'*looks pale and gaunt as his body shudders on the end of the weapon.'
 
 ; Rebounding
 /def -p0 -abh -mglob -t'The attack rebounds back onto you!'
@@ -40,7 +42,7 @@
 
 
 ; Bashing
-/def bashon = /set shouldAutoBash=1%;/echo ** Bashing Enabled ** %;/a
+/def bashon = /set shouldAutoBash=1%;/echo ** Bashing Enabled ** %;/hit
 /def bashoff = /set shouldAutoBash=05%;/echo ** Bashing Disabled **
 /def -p0 -mglob -t'You have recovered balance.' = /hit
 /def -p0 -mglob -t'You stand up and stretch your arms out wide.' = /hit
@@ -49,13 +51,13 @@
 /def key_left = /bashoff%; touch shield
 
 ; Trident
-/def sharp = open satchel %; get whetstone from satchel %; sharpen trident with whetstone %; put whetstone in satchel %; close satchel
+/def sharp = sharpen trident with whetstone
 /def s = trident shatter %{t}
 /def b = trident batter %{t}
 /def p = trident pierce %{t}
 /def sm = trident smash %{t}
 /def l = trident longslash %{t}
-/def a = mount wyrm%;trident stab %{t} cyanide
+/def a = mount wyrm%;trident stab %{t} formeldehyde
 /def t = trident trip %{t}
 
 ; Wyrm
@@ -68,6 +70,7 @@
 /def ig = wyrm icebreath ground
 /def r = wyrm roar %{t}
 /def c = wyrm charge %{t}
+/def d = wyrm deluge %{t}
 /def bon = wyrm bloodscent on
 /def boff = wyrm bloodscent off
 /def heal = wyrm heal
@@ -76,3 +79,8 @@
 /def p = surge %{1}
 /def aggro = order entourage kill %{t}
 /def fol = order entourage follow me 
+
+; Cloaks
+/def cloak =/set t=%{1}%; get %{t} from satchel%; wp %{t}
+/def drop=drop %{t}
+

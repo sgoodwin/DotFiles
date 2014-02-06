@@ -26,5 +26,5 @@ export EDITOR="/usr/local/bin/vim"
 export GOPATH=$HOME/Go
 
 youtube() {
-  mplayer $(youtube-dl -g $1)
+  mplayer -volume 100 $(youtube-dl -g $1)
 }
