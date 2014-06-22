@@ -1,21 +1,23 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-" My Bundles here:
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/tf.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-commentary'
-Bundle 'tomasr/molokai'
-Bundle 'tpope/vim-markdown'
-Bundle 'wookiehangover/jshint.vim'
+" My Plugins here:
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/tf.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+Plugin 'tomasr/molokai'
+Plugin 'tpope/vim-markdown'
+Plugin 'wookiehangover/jshint.vim'
+
+call vundle#end()
 
 syntax on
 filetype plugin indent on
