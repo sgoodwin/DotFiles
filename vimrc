@@ -16,6 +16,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-markdown'
 Plugin 'wookiehangover/jshint.vim'
+Plugin 'kballard/vim-swift'
+Plugin 'noahfrederick/vim-hemisu'
 
 call vundle#end()
 
@@ -30,7 +32,7 @@ let mapleader=","
 noremap \ ,
 
 set background=dark
-colorscheme molokai
+colorscheme hemisu
 set number
 
 set bs=2
@@ -61,3 +63,13 @@ set listchars=tab:▸\ ,eol:¬
 
 " Use matchit
 runtime macros/matchit.vim
+
+" Spellchecking for markdowns
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
+set complete+=kspell
+
+" Word wrapping for markdown
+autocmd Filetype markdown setlocal wrap
+autocmd Filetype markdown setlocal linebreak
+autocmd Filetype markdown setlocal nolist
+autocmd Filetype markdown setlocal columns=80
