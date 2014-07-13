@@ -39,7 +39,7 @@
 ; Defense messages
 /def -p0 -ah -mglob -t'The cold air strips the protection of * caloric salve.'
 
-
+/def -p0 -mglob -t'Miichelle Dwynerys, Curious Squirrel says, "Follow me."' = follow miichelle
 
 ; Bashing
 /def bashon = /set shouldAutoBash=1%;/echo ** Bashing Enabled ** %;/hit
