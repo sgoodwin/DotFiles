@@ -12,8 +12,8 @@
 /def char = get charcoal%;inr charcoal
 
 ; Gold
-/def outgold = open satchel%;get gold from satchel%;
-/def gold = open satchel%;put gold in satchel%;close satchel
+/def outgold = open pack%;get gold from pack%;
+/def gold = open pack%;put gold in pack%;close pack
 
 ; Hilites
 /def -p0 -ah -mglob -t'You notice a gladiator's trident trembling under the strain.'
@@ -81,6 +81,6 @@
 /def fol = order entourage follow me 
 
 ; Cloaks
-/def cloak =/set t=%{1}%; get %{t} from satchel%; wp %{t}
+/def cloak =/set t=%{1}%; get %{t} from pack%; wp %{t}
 /def drop=drop %{t}
 

@@ -22,9 +22,11 @@ alias vundle='vim +BundleClean +BundleInstall +qall'
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/Users/sgoodwin/Go/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
-export EDITOR="/usr/local/bin/vim"
+export EDITOR="vim"
 export GOPATH=$HOME/Go
 
 youtube() {
   mplayer -volume 100 $(youtube-dl -g $1)
 }
+
+alias rake='bundle exec rake'
