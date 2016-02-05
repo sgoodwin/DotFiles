@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 " My Plugins here:
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/tf.vim'
+Plugin 'vim-scripts/haskell.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tomasr/molokai'
@@ -18,6 +19,8 @@ Plugin 'tpope/vim-markdown'
 Plugin 'wookiehangover/jshint.vim'
 Plugin 'kballard/vim-swift'
 Plugin 'noahfrederick/vim-hemisu'
+Plugin 'godlygeek/tabular'
+Plugin 'Lokaltog/vim-distinguished'
 
 call vundle#end()
 
@@ -32,7 +35,7 @@ let mapleader=","
 noremap \ ,
 
 set background=dark
-colorscheme hemisu
+colorscheme distinguished
 set number
 
 set bs=2
