@@ -34,3 +34,5 @@ export DATABASE_URL=postgres:///$(whoami)
 
 # Fix issue with auto-completion being weird when navigating directories.
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'e:|[._-]=* e:|=*' 'l:|=* e:|=*'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
