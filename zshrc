@@ -20,16 +20,13 @@ alias vundle='vim +BundleClean +BundleInstall +qall'
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/Users/sgoodwin/Go/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/CrossPack-AVR/bin:/Users/sgoodwin/Go/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
 export EDITOR="vim"
 export GOPATH=$HOME/Go
 export LC_ALL="en_US.UTF-8"
 
-youtube() {
-  mplayer -volume 100 $(youtube-dl -g $1)
-}
-
 alias rake='bundle exec rake'
+alias devices='system_profiler SPUSBDataType'
 export DATABASE_URL=postgres:///$(whoami)
 
 # Fix issue with auto-completion being weird when navigating directories.

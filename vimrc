@@ -1,45 +1,7 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
-
-" let Vundle manage Vundle
-" required! 
-Plugin 'gmarik/Vundle.vim'
-
-" My Plugins here:
-Plugin 'kien/ctrlp.vim'
-Plugin 'vim-scripts/tf.vim'
-Plugin 'vim-scripts/haskell.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'tomasr/molokai'
-Plugin 'tpope/vim-markdown'
-Plugin 'wookiehangover/jshint.vim'
-Plugin 'kballard/vim-swift'
-Plugin 'noahfrederick/vim-hemisu'
-Plugin 'godlygeek/tabular'
-Plugin 'Lokaltog/vim-distinguished'
-
-call vundle#end()
-
-syntax on
-filetype plugin indent on
-
-set tabstop=2
-set shiftwidth=2
-set expandtab
-
-let mapleader=","
-noremap \ ,
-
-set background=dark
-colorscheme distinguished
-set number
-
-set bs=2
-
+so ~/.vimpluginsrc
 
 " No more arrow keys
 nnoremap <up> <nop>
@@ -51,21 +13,47 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+syntax on
+filetype plugin indent on
+
+" ----Formatting and such
+
+set background=dark
+colorscheme distinguished
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set number
+set bs=2
+set relativenumber
+set suffixesadd=.swift
+set autowrite
+
+" Show invisibles
+set list
+set listchars=tab:▸\ ,eol:¬
+
+" ----Searching----
+
 " Disable search hilighting with <C-l>
 noremap <silent> <C-l> : <C-u> nohlsearch <CR><C-l>
 
 " Hilight searches
 set hls
 
+" ----Leader commands----
+
+let mapleader=","
+noremap \ ,
+
 " Reformat whole buffer with ',='
 map <Leader>= gg=G
 
-" Show invisibles
-set list
-set listchars=tab:▸\ ,eol:¬
+" Format selected text into columns
+vmap <Leader>t !column -t<CR>gg=G
 
-" Use matchit
-runtime macros/matchit.vim
+" ----Extra Markdown Stuff----
 
 " Spellchecking for markdowns
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
