@@ -6,17 +6,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " My Plugins here:
-Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/tf.vim'
-Plugin 'vim-scripts/haskell.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
-Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-markdown'
-Plugin 'wookiehangover/jshint.vim'
 Plugin 'kballard/vim-swift'
 Plugin 'noahfrederick/vim-hemisu'
 Plugin 'godlygeek/tabular'
-Plugin 'Lokaltog/vim-distinguished'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'haya14busa/incsearch.vim'
 
 call vundle#end()

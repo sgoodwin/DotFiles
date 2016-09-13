@@ -19,7 +19,7 @@ filetype plugin indent on
 " ----Formatting and such
 
 set background=dark
-colorscheme distinguished
+colorscheme hemisu
 
 set tabstop=2
 set shiftwidth=2
@@ -48,7 +48,7 @@ let mapleader=","
 noremap \ ,
 
 " Reformat whole buffer with ',='
-map <Leader>= gg=G
+     map <Leader>= gg=G
 
 " Format selected text into columns
 vmap <Leader>t !column -t<CR>gg=G
@@ -64,3 +64,8 @@ autocmd Filetype markdown setlocal wrap
 autocmd Filetype markdown setlocal linebreak
 autocmd Filetype markdown setlocal nolist
 autocmd Filetype markdown setlocal columns=80
+
+" Incsearch by hayabusa
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
