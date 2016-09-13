@@ -9,10 +9,12 @@ export ZSH_THEME="philips"
 
 export CASE_SENSITIVE="true"
 
+export FASTLANE_USER="samuel@roundwallsoftware.com"
+
 # Comment this out to disable weekly auto-update checks
 export DISABLE_AUTO_UPDATE="true"
 
-plugins=(terminalapp)
+plugins=(terminalapp, zsh-syntax-highlighting)
 
 alias stat='git status -sb'
 alias push='git push'
