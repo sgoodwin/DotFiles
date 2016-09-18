@@ -13,7 +13,8 @@ Plugin 'tpope/vim-markdown'
 Plugin 'kballard/vim-swift'
 Plugin 'noahfrederick/vim-hemisu'
 Plugin 'godlygeek/tabular'
-Plugin 'easymotion/vim-easymotion'
 Plugin 'haya14busa/incsearch.vim'
+Plugin 'skywind3000/asyncrun.vim'
+Plugin 'sgoodwin/Grep-Operator'
 
 call vundle#end()
