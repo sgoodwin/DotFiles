@@ -16,7 +16,7 @@
 /def gold = open pack%;put gold in pack%;close pack
 
 ; Hilites
-/def -p0 -ah -mglob -t'You notice a gladiator's trident trembling under the strain.'
+/def -p0 -ah -mglob -t'You notice a gladiator\'s trident trembling under the strain.'
 /def -p0 -ah -mglob -t'You can again call upon your vitality.' 
 /def -p0 -ah -mglob -t'A surge of rejuvenating energy floods your system, healing your wounds.' 
 /def -p0 -ah -mglob -t'You lunge towards * with a gladiator\'s trident, but miss.' 
@@ -46,6 +46,7 @@
 /def bashoff = /set shouldAutoBash=05%;/echo ** Bashing Disabled **
 /def -p0 -mglob -t'You have recovered balance.' = /hit
 /def -p0 -mglob -t'You stand up and stretch your arms out wide.' = /hit
+/def -p0 -mglob -t'You have writhed free of your entanglement by webs.' = /hit
 /def hit = /if (shouldAutoBash==1) /bash%; /endif
 /def bash = mount wyrm %; trident stab %{t}
 /def key_left = /bashoff%; touch shield
