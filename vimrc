@@ -21,7 +21,7 @@ filetype plugin indent on
 " ----Formatting and such
 
 set background=dark
-colorscheme hemisu
+colorscheme smyck
 
 set tabstop=2
 set shiftwidth=2
@@ -102,6 +102,3 @@ let g:swift_platform = 'iphonesimulator'
 
 nnoremap <leader>b :AsyncRun xcodebuild -scheme TheoryDrils -destination name=iPhone\ SE,platform=iOS\ Simulator \| xcpretty<cr>
 nnoremap <leader>u :AsyncRun xcodebuild test -scheme TheoryDrills -destination name=iPhone\ SE,platform=iOS\ Simulator \| xcpretty<cr>
-
-" Jump to the first placeholder by typing `<C-k>`.
-autocmd FileType swift imap <buffer> <C-k> <Plug>(autocomplete_swift_jump_to_placeholder)
