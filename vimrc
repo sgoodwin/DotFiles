@@ -45,9 +45,6 @@ set statusline+=%3*%{g:asyncrun_status}%*
 set list
 set listchars=tab:▸\ ,eol:¬
 
-" Hilight searches
-set hls
-
 " ----Leader commands----
 
 let mapleader=","
@@ -92,9 +89,9 @@ augroup vimfiles
 augroup END
 
 " Incsearch by hayabusa
-" noremap /  <Plug>(incsearch-forward)
-" noremap ?  <Plug>(incsearch-backward)
-" noremap g/ <Plug>(incsearch-stay)
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 
 " Vim-swift
 let g:swift_device = 'iPhone 6'
