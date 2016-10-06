@@ -93,6 +93,10 @@ map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
+" Ripgrep
+set grepprg=rg\ --vimgrep\ --no-heading
+set grepformat=%f:%l:%c:%m,%f:%l:%m
+
 " Vim-swift
 let g:swift_device = 'iPhone 6'
 let g:swift_platform = 'iphonesimulator'
