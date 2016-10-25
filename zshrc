@@ -22,7 +22,7 @@ alias vundle='vim +BundleClean +BundleInstall +qall'
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/CrossPack-AVR/bin:/Users/sgoodwin/Go/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/CrossPack-AVR/bin:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/sbin:$HOME/.rvm/bin:$HOME/bin" # Add RVM to PATH for scripting
 export EDITOR="vim"
 export GOPATH=$HOME/Go
 export LC_ALL="en_US.UTF-8"
@@ -33,8 +33,6 @@ export DATABASE_URL=postgres:///$(whoami)
 
 # Fix issue with auto-completion being weird when navigating directories.
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'e:|[._-]=* e:|=*' 'l:|=* e:|=*'
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # GPG Setup
 gpg-agent --daemon --enable-ssh-support --write-env-file "${HOME}/.gpg-agent-info"
