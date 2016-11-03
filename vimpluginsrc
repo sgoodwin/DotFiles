@@ -17,5 +17,6 @@ Plugin 'haya14busa/incsearch.vim'
 Plugin 'skywind3000/asyncrun.vim'
 Plugin 'sgoodwin/Grep-Operator'
 Plugin 'jacoborus/tender'
+Plugin 'mbbill/vim-seattle'
 
 call vundle#end()

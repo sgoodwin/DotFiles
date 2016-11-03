@@ -21,7 +21,7 @@ filetype plugin indent on
 " ----Formatting and such
 
 set background=dark
-colorscheme tender
+colorscheme seattle
 
 set tabstop=2
 set shiftwidth=2
