@@ -34,14 +34,4 @@ export DATABASE_URL=postgres:///$(whoami)
 # Fix issue with auto-completion being weird when navigating directories.
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'e:|[._-]=* e:|=*' 'l:|=* e:|=*'
 
-# GPG Setup
-gpg-agent --daemon --enable-ssh-support --write-env-file "${HOME}/.gpg-agent-info"
-
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-  . "${HOME}/.gpg-agent-info"
-  export GPG_AGENT_INFO
-  export SSH_AUTH_SOCK
-fi
-
-GPG_TTY=$(tty)
-export GPG_TTY
+export GPG_TTY=$(tty)
