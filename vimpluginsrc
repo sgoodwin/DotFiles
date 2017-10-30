@@ -10,13 +10,17 @@ Plugin 'vim-scripts/tf.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-markdown'
-Plugin 'toyamarinyon/vim-swift'
-Plugin 'noahfrederick/vim-hemisu'
+Plugin 'keith/swift.vim'
 Plugin 'godlygeek/tabular'
-Plugin 'haya14busa/incsearch.vim'
 Plugin 'skywind3000/asyncrun.vim'
 Plugin 'sgoodwin/Grep-Operator'
 Plugin 'jacoborus/tender'
-Plugin 'mbbill/vim-seattle'
+Plugin 'b4winckler/vim-objc'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'junegunn/goyo.vim'
+
+" Themes
+
+Plugin 'iKarith/tigrana'
 
 call vundle#end()

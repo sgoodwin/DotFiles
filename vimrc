@@ -21,14 +21,13 @@ filetype plugin indent on
 " ----Formatting and such
 
 set background=dark
-colorscheme seattle
+colorscheme tigrana-256-dark
 
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set number
 set bs=2
-set relativenumber
 set numberwidth=2
 set suffixesadd=.swift
 set autowrite
@@ -68,30 +67,25 @@ nnoremap <Leader>sv :source $MYVIMRC<cr>
 
 " ----Extra Markdown Stuff----
 
-" Spellchecking for markdowns
-set complete+=kspell
+" " Spellchecking for markdowns
+" set complete+=kspell
 
-augroup markdown
-  autocmd!
-  autocmd FileType markdown setlocal spell spelllang=en_us
+" augroup markdown
+"   autocmd!
+"   autocmd FileType markdown setlocal spell spelllang=en_us
 
-  " Word wrapping for markdown
-  autocmd Filetype markdown setlocal wrap
-  autocmd Filetype markdown setlocal linebreak
-  autocmd Filetype markdown setlocal nolist
-  autocmd Filetype markdown setlocal columns=80
-augroup END
+  " " Word wrapping for markdown
+  " autocmd Filetype markdown setlocal wrap
+  " autocmd Filetype markdown setlocal linebreak
+  " autocmd Filetype markdown setlocal nolist
+  " autocmd Filetype markdown setlocal columns=80
+" augroup END
 
 augroup vimfiles
   " Proper comment string for vim files
   autocmd!
   autocmd FileType vim setlocal commentstring=\"\ %s
 augroup END
-
-" Incsearch by hayabusa
-map / <Plug>(incsearch-forward)
-map ? <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
 
 " Ripgrep
 set grepprg=rg\ --vimgrep\ --no-heading
@@ -101,5 +95,6 @@ set grepformat=%f:%l:%c:%m,%f:%l:%m
 let g:swift_device = 'iPhone 6'
 let g:swift_platform = 'iphonesimulator'
 
-nnoremap <leader>b :AsyncRun xcodebuild -scheme TheoryDrils -destination name=iPhone\ SE,platform=iOS\ Simulator \| xcpretty<cr>
-nnoremap <leader>u :AsyncRun xcodebuild test -scheme TheoryDrills -destination name=iPhone\ SE,platform=iOS\ Simulator \| xcpretty<cr>
+" vim-markdown
+let g:markdown_fenced_languages = ['javascript', 'go', 'ruby', 'swift']
+
