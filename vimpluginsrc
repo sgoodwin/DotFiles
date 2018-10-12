@@ -21,6 +21,8 @@ Plugin 'junegunn/goyo.vim'
 
 " Themes
 
-Plugin 'iKarith/tigrana'
+Plugin 'AlessandroYorba/Sierra'
+Plugin 'thenewvu/vim-colors-sketching'
+Plugin 'mhinz/vim-janah'
 
 call vundle#end()

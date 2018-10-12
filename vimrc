@@ -21,7 +21,7 @@ filetype plugin indent on
 " ----Formatting and such
 
 set background=dark
-colorscheme tigrana-256-dark
+colorscheme janah
 
 set tabstop=2
 set shiftwidth=2
@@ -65,10 +65,15 @@ vnoremap <Leader>a: :Tabularize /:\zs<CR>
 nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <Leader>sv :source $MYVIMRC<cr>
 
+" ----For Podfiles----
+augroup podfile
+  autocmd BufNewFile,BufRead Podfile set syntax=ruby
+augroup END
+
 " ----Extra Markdown Stuff----
 
 " " Spellchecking for markdowns
-" set complete+=kspell
+set complete+=kspell
 
 " augroup markdown
 "   autocmd!
@@ -98,3 +103,5 @@ let g:swift_platform = 'iphonesimulator'
 " vim-markdown
 let g:markdown_fenced_languages = ['javascript', 'go', 'ruby', 'swift']
 
+" vim-commentary
+autocmd FileType ruby setlocal commentstring=#\ %s
