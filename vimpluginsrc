@@ -18,11 +18,14 @@ Plugin 'jacoborus/tender'
 Plugin 'b4winckler/vim-objc'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'junegunn/goyo.vim'
+Plugin 'jph00/swift-apple'
 
 " Themes
 
 Plugin 'AlessandroYorba/Sierra'
 Plugin 'thenewvu/vim-colors-sketching'
 Plugin 'mhinz/vim-janah'
+Plugin 'iKarith/tigrana'
+Plugin 'KeitaNakamura/neodark.vim'
 
 call vundle#end()

@@ -105,3 +105,4 @@ let g:markdown_fenced_languages = ['javascript', 'go', 'ruby', 'swift']
 
 " vim-commentary
 autocmd FileType ruby setlocal commentstring=#\ %s
+let g:neodark#use_256color = 1

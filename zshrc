@@ -9,8 +9,6 @@ export ZSH_THEME="philips"
 
 export CASE_SENSITIVE="true"
 
-export FASTLANE_USER="samuel@roundwallsoftware.com"
-
 # Comment this out to disable weekly auto-update checks
 export DISABLE_AUTO_UPDATE="true"
 
@@ -22,9 +20,7 @@ alias vundle='vim +BundleClean +BundleInstall +qall'
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/CrossPack-AVR/bin:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/sbin:$HOME/.rvm/bin:$HOME/bin" # Add RVM to PATH for scripting
 export EDITOR="vim"
-export GOPATH=$HOME/Go
 export LC_ALL="en_US.UTF-8"
 
 alias rake='bundle exec rake'
@@ -35,3 +31,5 @@ export DATABASE_URL=postgres:///$(whoami)
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'e:|[._-]=* e:|=*' 'l:|=* e:|=*'
 
 export GPG_TTY=$(tty)
+
+function stream () { youtube-dl -o - "$1" | mpv - }
